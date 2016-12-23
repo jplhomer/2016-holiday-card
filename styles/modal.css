@@ -1,0 +1,42 @@
+.modals {
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.modals__close {
+    background: none;
+    -webkit-appearance: none;
+    border: none;
+    position: absolute;
+    top: 2.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 80vw;
+    height: 80vh;
+    padding: 1em;
+    color: #333;
+    display: none;
+    overflow: scroll;
+    max-width: 800px;
+}
+
+.modal.active,
+.modals.active {
+    display: block;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Happy Holiday from the Larsons</title>
+        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="/styles/modal.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css">
+    </head>
+    <body>
+        <div style="display: none;">
+            <svg version="1.1" id="ornament" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 29.3 44.2" enable-background="new 0 0 29.3 44.2" xml:space="preserve">
+            <g>
+
+            		<ellipse transform="matrix(0.9549 -0.2969 0.2969 0.9549 -8.0337 5.6715)" class="fill" fill="#05ACAF" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" cx="14.7" cy="29.3" rx="14.5" ry="14.8"/>
+
+            		<ellipse transform="matrix(0.9549 -0.2969 0.2969 0.9549 -4.3346 3.8748)" class="fill" fill="#DFDB9B" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" cx="10.6" cy="16.2" rx="5.1" ry="1.1"/>
+            </g>
+            <path fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" d="M10.4,16.4L6.3,3.1c0,0,0.7-5.5,4.7-1.6"/>
+            </svg>
+        </div>
+        <div class="tree--top">
+            <h1 class="cursive">Happy Holidays</h1>
+            <h2 class="cursive">From Bri and Josh</h2>
+
+            <div class="video">
+                <video src="/media/test.mp4" playsinline data-title="Intro"></video>
+            </div>
+        </div>
+        <div class="tree--middle">
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <a href="#" data-modal-trigger="anniversaries" class="ornament ornament--featured"><svg><use xlink:href="#ornament"></use></svg><span>🎂</span></a>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <a href="#" data-modal-trigger="anniversaries" class="ornament ornament--featured"><svg><use xlink:href="#ornament"></use></svg><span>✈️</span></a>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <a href="#" data-modal-trigger="anniversaries" class="ornament ornament--featured"><svg><use xlink:href="#ornament"></use></svg><span>🎤</span></a>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <a href="#" data-modal-trigger="anniversaries" class="ornament ornament--featured"><svg><use xlink:href="#ornament"></use></svg><span>👻</span></a>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+            <div class="ornament"><svg><use xlink:href="#ornament"></use></svg></div>
+        </div>
+        <div class="tree--bottom">
+            <div class="video">
+                <video src="/media/test.mp4" playsinline data-title="Intro"></video>
+            </div>
+        </div>
+        <div class="modals">
+            <button class="modals__close" data-modal-close>Return</button>
+            <div class="modal" data-for="anniversaries">
+                <video src="/media/test.mp4" playsinline data-title="Intro"></video>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsa ducimus distinctio accusantium voluptatum enim expedita aliquid facilis nisi saepe? Quos repellendus delectus perferendis! Iusto tenetur sint nulla culpa quia!</p>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.min.js"></script>
+        <script src="/scripts/main.js" async></script>
+    </body>
+</html>

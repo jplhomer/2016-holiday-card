@@ -1,7 +1,7 @@
 (function() {
     var $modals = document.querySelector('.modals');
 
-    document.querySelectorAll('[data-modal-trigger]').forEach((link) => {
+    [].slice.call(document.querySelectorAll('[data-modal-trigger]')).forEach((link) => {
         var target = link.dataset.modalTrigger;
         var matchingModal = $modals.querySelector('[data-for="' + target + '"]');
 
@@ -26,9 +26,9 @@
         closeModal();
     });
 
-    document.querySelectorAll('.video video').forEach((video) => new MediaElementPlayer(video));
+    [].slice.call(document.querySelectorAll('.video video')).forEach((video) => new MediaElementPlayer(video));
 
-    document.querySelectorAll('video').forEach((video) => {
+    [].slice.call(document.querySelectorAll('video')).forEach((video) => {
         video.addEventListener('play', () => {
             trackEvent('video', 'play', video.dataset.title);
         });
@@ -36,8 +36,8 @@
 
     var closeModal = function() {
         $modals.classList.remove('active');
-        $modals.querySelectorAll('.modal').forEach((modal) => modal.classList.remove('active'));
-        $modals.querySelectorAll('video').forEach((video) => video.pause());
+        [].slice.call($modals.querySelectorAll('.modal')).forEach((modal) => modal.classList.remove('active'));
+        [].slice.call($modals.querySelectorAll('video')).forEach((video) => video.pause());
     };
 
     var trackEvent = function(eventCategory, eventAction, eventLabel) {

@@ -13,12 +13,13 @@
     -webkit-appearance: none;
     border: none;
     position: absolute;
-    top: 2.5vh;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 2.5vw;
+    right: 2.5vw;
     color: white;
     text-transform: uppercase;
     cursor: pointer;
+    font-size: 8vw;
+    line-height: 1;
 }
 
 .modal {

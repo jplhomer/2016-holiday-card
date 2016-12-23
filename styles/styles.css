@@ -19,6 +19,7 @@ body {
     background-image: linear-gradient(to right, #650000, #840909, #650000);
     color: #dadada;
     font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.5;
 }
 
 video {
